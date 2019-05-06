@@ -281,8 +281,8 @@ class Main extends Component {
           }}
           text={{
             font: 'monoid',
-            width: 6,
-            value: "WELCOME TO PSYCH-E-TILLA! \n WE MAKE WHOLESOME GAMES ^_^ \n \n What we're currently showcasing here are prototype features of our first game in development. \n \n ABOUT THIS GAME: \n Mindlessly avoid obstacles as you wholesomely guide your eager demon pet through life! \n \n THANKS FOR YOUR LOVE AND SUPPORT!",
+            width: 8,
+            value: "WELCOME TO PSYCH-E-TILLA! \n WE MAKE WHOLESOME GAMES ^_^ \n \n WHAT WE'RE CURRENTLY SHOWCASING HERE ARE PROTOTYPE FEATURES OF OUR FIRST GAME IN DEVELOPMENT.",
             align: 'center',
             color: '#FFCF59',
             xOffset: 10,
@@ -319,8 +319,8 @@ class Main extends Component {
           }}
           text={{
             font: 'monoid',
-            width: 5,
-            value: "THE TEAM \n\n CHRONO - Alexis Valladares \n Game Designer/Developer \n\n GOEMON - Alex Otto \n Sound Engineer/Artist \n\n SKYLAKE - Nathan Wong \n Quality Assurance/Analytics \n\n Sukanya Surya \n Artist \n\n MEOW - Sneha Surya \n Artist \n\n FOOFOO - Shreya Raj \n Developer \n\n PREACHER - Sudeep Raj \n Project Manager/Founder",
+            width: 8,
+            value: "\n \n ABOUT THIS GAME: \n\n MINDLESSLY AVOID OBSTACLES AS YOU HEARTILY GUIDE YOUR EAGER DEMON PET THROUGH LIFE. TRAVELING TOO FAR FROM YOUR PET WILL SCARE THEM. TRAVELING TOO CLOSE AND YOUR PET WILL OVERWHELM YOU. BALANCE IS KEY FOR A STABLE JOURNEY! \n\n THANKS FOR YOUR LOVE AND SUPPORT!",
             align: 'center',
             color: '#FFCF59',
             xOffset: 10,
