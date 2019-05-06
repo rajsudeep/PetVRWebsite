@@ -8,8 +8,8 @@ class Main extends Component {
     super()
     this.state = {
       colorIndex: 0,
-      sphere1: { x: -13, y: 4, z: -14 },
-      sphere2: { x: 13, y: 4, z: -14 }
+      sphere1: { x: -11, y: 4, z: -16 },
+      sphere2: { x: 11, y: 4, z: -16 }
     }
   }
 
@@ -235,9 +235,9 @@ class Main extends Component {
             text-geometry={{
               value: 'TECHNICAL DIFFUCKICULTIES',
               weight: 'normal',
-              bevelEnabled: true,
-              bevelSize: 0.500,
-              curveSegments: 1,
+              bevelEnabled: false,
+              bevelSize: 0,
+              curveSegments: 0,
               height: .50,
               size: 1
             }}
@@ -247,23 +247,7 @@ class Main extends Component {
               roughness: 0.050,
               width: 512,
             }}
-            position={{ x: -9.5, y: 15, z: -30 }}
-        />
-        <Entity
-          primitive="a-light"
-          type="directional"
-          color="#FFF"
-          intensity={1}
-          position={{ x: 2.5, y: 0.0, z: 0.0 }}
-          animation__oscillate={{
-            property: 'position',
-            dur: 2000,
-            dir: 'alternate',
-            easing: 'linear',
-            loop: true,
-            from: { x: 2.5, y: 0.0, z: 0.0 },
-            to: { x: 3.0, y: 0.25, z: 0.0 }
-          }}
+            position={{ x: -9.5, y: 13, z: -20 }}
         />
         <Entity primitive="a-camera" look-controls>
           <Entity
@@ -286,41 +270,29 @@ class Main extends Component {
           />
         </Entity>
         <Entity
+          class="clickable"
           geometry={{
             primitive: 'plane',
-            height: 'auto',
-            width: 'auto'
+            height: 6,
+            width: 9
           }}
           material={{
-            color: '#0c090c'
+            color: '#4b274b'
           }}
           text={{
-            width: '20',
-            value: "UNDER DEV: WHAT THE HECK U DOING HERE >_<",
+            font: 'monoid',
+            width: 6,
+            value: "WELCOME TO PSYCH-E-TILLA! \n WE MAKE WHOLESOME GAMES ^_^ \n \n What we're currently showcasing here are prototype features of our first game in development. \n \n ABOUT THIS GAME: \n Mindlessly avoid obstacles as you wholesomely guide your eager demon pet through life! \n \n THANKS FOR YOUR LOVE AND SUPPORT!",
+            align: 'center',
+            color: '#FFCF59',
+            xOffset: 10,
+            zOffset: .1
           }}
-          position="0 1 -10"
-          rotation="0 0 0"
-        />
-        <Entity
-          class="clickable"
-          lowpoly={{
-            color: COLORS[this.state.colorIndex],
-            nodes: true,
-            opacity: 0.15,
-            wireframe: true
-          }}
-          primitive="a-box"
-          detail={2}
           events={{
             click: this._handleClick.bind(this)
           }}
-          height={5}
-          width={3}
-          depth={10}
-          metalness={0.3}
-          rotation="0 -30 0"
+          rotation="0 40 0"
           position={this.state.sphere1}
-          color="#0c090c"
           animation__oscillate={{
             property: 'position',
             dur: 2000,
@@ -337,24 +309,28 @@ class Main extends Component {
         />
         <Entity
           class="clickable"
-          lowpoly={{
-            color: COLORS[this.state.colorIndex],
-            nodes: true,
-            opacity: 0.15,
-            wireframe: true
+          geometry={{
+            primitive: 'plane',
+            height: 6,
+            width: 9
           }}
-          primitive="a-box"
-          detail={2}
+          material={{
+            color: '#4b274b'
+          }}
+          text={{
+            font: 'monoid',
+            width: 5,
+            value: "THE TEAM \n\n CHRONO - Alexis Valladares \n Game Designer/Developer \n\n GOEMON - Alex Otto \n Sound Engineer/Artist \n\n SKYLAKE - Nathan Wong \n Quality Assurance/Analytics \n\n Sukanya Surya \n Artist \n\n MEOW - Sneha Surya \n Artist \n\n FOOFOO - Shreya Raj \n Developer \n\n PREACHER - Sudeep Raj \n Project Manager/Founder",
+            align: 'center',
+            color: '#FFCF59',
+            xOffset: 10,
+            zOffset: .1
+          }}
           events={{
             click: this._handleClick.bind(this)
           }}
           position={this.state.sphere2}
-          rotation="0 30 0"
-          height={5}
-          width={3}
-          depth={10}
-          metalness={0.3}
-          color="#0c090c"
+          rotation="0 -40 0"
           animation__oscillate={{
             property: 'position',
             dur: 2000,
@@ -370,14 +346,14 @@ class Main extends Component {
           }}
         />
         <Entity
-          position="0 3 -8"
+          position="0 3 8"
           geometry={{
-            primitive: 'plane',
+            primitive: 'box',
             height: 2,
             width: 2
           }}
           material={{
-            alphaTest: 0.5,
+            alphaTest: 0,
             shader: 'gif',
             src: '#banana'
           }}
