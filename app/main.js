@@ -44,7 +44,7 @@ class Main extends Component {
           }}
         >
         <a-assets>
-          <video id="videogame" autoplay loop="true" src="img/lucid.mp4"></video>
+          <video id="videogame" autoplay loop="true" src="img/petsampleclip.mp4"></video>
           <img id="bbtree" src="img/bbTreeanimslowedVR6x.gif"></img>
           <img id="banana" src="img/banana.gif"></img>
         </a-assets>
@@ -227,9 +227,9 @@ class Main extends Component {
         <Entity
           primitive="a-video"
           src="#videogame"
-          width="16"
-          height="16"
-          position="0 5 -20"
+          width="13"
+          height="13"
+          position="0 7 -20"
         />
         <Entity
             text-geometry={{
@@ -277,12 +277,15 @@ class Main extends Component {
             width: 9
           }}
           material={{
-            color: '#4b274b'
+            color: '#4b274b',
+            opacity: .80
           }}
           text={{
             font: 'monoid',
             width: 8,
-            value: "WELCOME TO PSYCH-E-TILLA! \n WE MAKE WHOLESOME GAMES ^_^ \n \n WHAT WE'RE CURRENTLY SHOWCASING HERE ARE PROTOTYPE FEATURES OF OUR FIRST GAME IN DEVELOPMENT.",
+            anchor: 'center',
+            baseline: 'center',
+            value: "WELCOME TO PSYCH-E-TILLA! \n\n WE MAKE WHOLESOME GAMES ^_^ \n \n WHAT WE'RE CURRENTLY SHOWCASING HERE ARE PROTOTYPE FEATURES OF OUR FIRST GAME IN DEVELOPMENT.",
             align: 'center',
             color: '#FFCF59',
             xOffset: 10,
@@ -312,19 +315,23 @@ class Main extends Component {
           geometry={{
             primitive: 'plane',
             height: 6,
-            width: 9
+            width: 9,
           }}
           material={{
-            color: '#4b274b'
+            color: '#4b274b',
+            opacity: .80
           }}
           text={{
             font: 'monoid',
             width: 8,
-            value: "\n \n ABOUT THIS GAME: \n\n MINDLESSLY AVOID OBSTACLES AS YOU HEARTILY GUIDE YOUR EAGER DEMON PET THROUGH LIFE. TRAVELING TOO FAR FROM YOUR PET WILL SCARE THEM. TRAVELING TOO CLOSE AND YOUR PET WILL OVERWHELM YOU. BALANCE IS KEY FOR A STABLE JOURNEY! \n\n THANKS FOR YOUR LOVE AND SUPPORT!",
+            anchor: 'center',
+            baseline: 'center',
+            value: "\n \n ABOUT THIS GAME: \n\n MINDLESSLY AVOID OBSTACLES AS YOU HEARTILY GUIDE YOUR EAGER DEMON PET THROUGH LIFE. TRAVELING TOO FAR FROM YOUR PET WILL SCARE THEM. TRAVELING TOO CLOSE AND YOUR PET WILL OVERWHELM YOU. BALANCE IS KEY FOR A STABLE JOURNEY! \n\n\n ",
             align: 'center',
             color: '#FFCF59',
             xOffset: 10,
-            zOffset: .1
+            zOffset: .1,
+            wrapCount: 40
           }}
           events={{
             click: this._handleClick.bind(this)

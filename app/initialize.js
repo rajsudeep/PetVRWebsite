@@ -11,6 +11,7 @@ import 'aframe-event-set-component'
 import 'aframe-text-geometry-component'
 import 'aframe-gif-shader'
 import 'aframe-gif-component'
+import 'aframe-video-shader'
 import './components/aframe-environment'
 import './components/aframe-effects'
 

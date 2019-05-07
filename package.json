@@ -23,6 +23,7 @@
   "devDependencies": {
     "aframe-gif-component": "^0.2.0",
     "aframe-gif-shader": "^0.9.1",
+    "aframe-video-shader": "^0.1.8",
     "auto-reload-brunch": "^2",
     "babel-brunch": "~6.0",
     "babel-plugin-transform-react-jsx": "^6.24.1",
