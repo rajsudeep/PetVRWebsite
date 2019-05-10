@@ -31,7 +31,7 @@ class Main extends Component {
   render() {
     return (
       <Scene
-          environment={{
+        environment={{
             preset: 'forest',
             seed: 10,
             skyType: 'gradient',
@@ -49,7 +49,8 @@ class Main extends Component {
             gridColor: "#d19dcd",
             grid: 'xlines',
             dressingVariance: { x: 15, y: 15, z: 15}
-          }}
+        }}
+        loading-screen="dotsColor: red; backgroundColor: black"
         >
         <a-assets>
           <video id="videogame" autoplay loop="true" src="img/petsampleclip.mp4"></video>
@@ -57,6 +58,14 @@ class Main extends Component {
           <img id="banana" src="img/banana.gif"></img>
           <img id="team" src="img/bbUxerTeamForVRSite.png"></img>
         </a-assets>
+        <Entity
+          primitive="a-sphere"
+          position="-1 2.466 -23.19"
+          color="#4b274b"
+          event-set__enter="_event: mouseenter; color: #000"
+          event-set__leave="_event: mouseleave; color: #4b274b"
+          navigate-on-click="url: http://psychetilla.surge.sh"
+        />
         <Entity
           primitive="a-image"
           src="#bbtree"
@@ -239,7 +248,6 @@ class Main extends Component {
           width="13"
           height="13"
           position="0 7 -20"
-          navigate-on-click="url: http://psychetilla.com"
         />
         <Entity
             text-geometry={{
@@ -714,6 +722,7 @@ class Main extends Component {
       </Scene>
     )
   }
+
   _handleClick() {
     this.setState({
       colorIndex: (this.state.colorIndex + 1) % COLORS.length
