@@ -9,7 +9,15 @@ class Main extends Component {
     this.state = {
       colorIndex: 0,
       sphere1: { x: -11, y: 4, z: -16 },
-      sphere2: { x: 11, y: 4, z: -16 }
+      sphere2: { x: 11, y: 4, z: -16 },
+      alexinfo: { x: 11, y: 4.7, z: 12},
+      snehainfo: { x: 7.9, y: 4.7, z: 12},
+      shreyainfo: { x: 4.8, y: 4.7, z: 12},
+      alexisinfo: { x: 1.7, y: 4.7, z: 12},
+      teaminfo: { x: -1.4, y: 4.7, z: 12},
+      nathaninfo: { x: -4.5, y: 4.7, z: 12},
+      sukanyainfo: { x: -7.6, y: 4.7, z: 12},
+      sudeepinfo: { x: -10.7, y: 4.7, z: 12}
     }
   }
 
@@ -47,6 +55,7 @@ class Main extends Component {
           <video id="videogame" autoplay loop="true" src="img/petsampleclip.mp4"></video>
           <img id="bbtree" src="img/bbTreeanimslowedVR6x.gif"></img>
           <img id="banana" src="img/banana.gif"></img>
+          <img id="team" src="img/bbUxerTeamForVRSite.png"></img>
         </a-assets>
         <Entity
           primitive="a-image"
@@ -232,6 +241,9 @@ class Main extends Component {
           position="0 7 -20"
         />
         <Entity
+          primitive="a-link"
+        />
+        <Entity
             text-geometry={{
               value: 'TECHNICAL DIFFUCKICULTIES',
               weight: 'normal',
@@ -353,18 +365,349 @@ class Main extends Component {
           }}
         />
         <Entity
-          position="0 3 8"
+          primitive="a-image"
+          src="#team"
+          height="4"
+          width="25"
+          position="0 2 12"
+          rotation="0 180 0"
+        />
+        <Entity
+          class="clickable"
           geometry={{
-            primitive: 'box',
-            height: 2,
-            width: 2
+            primitive: 'plane',
+            height: 1,
+            width: 3,
           }}
           material={{
-            alphaTest: 0,
-            shader: 'gif',
-            src: '#banana'
+            color: '#4b274b',
+            opacity: .80
+          }}
+          text={{
+            font: 'monoid',
+            width: 5,
+            anchor: 'center',
+            baseline: 'center',
+            value: "\"Goemon\" \n Alex Otto \n Sound Engineer/Artist",
+            align: 'center',
+            color: '#FFCF59',
+            xOffset: 10,
+            zOffset: .1,
+            wrapCount: 40
+          }}
+          events={{
+            click: this._handleClick.bind(this)
+          }}
+          position={this.state.alexinfo}
+          rotation="0 180 0"
+          animation__oscillate={{
+            property: 'position',
+            dur: 2000,
+            dir: 'alternate',
+            easing: 'linear',
+            loop: true,
+            from: this.state.alexinfo,
+            to: {
+              x: this.state.alexinfo.x,
+              y: this.state.alexinfo.y + 0.25,
+              z: this.state.alexinfo.z
+            }
           }}
         />
+        <Entity
+          class="clickable"
+          geometry={{
+            primitive: 'plane',
+            height: 1,
+            width: 3,
+          }}
+          material={{
+            color: '#4b274b',
+            opacity: .80
+          }}
+          text={{
+            font: 'monoid',
+            width: 5,
+            anchor: 'center',
+            baseline: 'center',
+            value: "\"Meow\" \n Sneha Surya \n Artist",
+            align: 'center',
+            color: '#FFCF59',
+            xOffset: 10,
+            zOffset: .1,
+            wrapCount: 40
+          }}
+          events={{
+            click: this._handleClick.bind(this)
+          }}
+          position={this.state.snehainfo}
+          rotation="0 180 0"
+          animation__oscillate={{
+            property: 'position',
+            dur: 2000,
+            dir: 'alternate',
+            easing: 'linear',
+            loop: true,
+            from: this.state.snehainfo,
+            to: {
+              x: this.state.snehainfo.x,
+              y: this.state.snehainfo.y + 0.25,
+              z: this.state.snehainfo.z
+            }
+          }}
+        />
+        <Entity
+          class="clickable"
+          geometry={{
+            primitive: 'plane',
+            height: 1,
+            width: 3,
+          }}
+          material={{
+            color: '#4b274b',
+            opacity: .80
+          }}
+          text={{
+            font: 'monoid',
+            width: 5,
+            anchor: 'center',
+            baseline: 'center',
+            value: "\"FooFoo\" \n Shreya Raj \n Developer",
+            align: 'center',
+            color: '#FFCF59',
+            xOffset: 10,
+            zOffset: .1,
+            wrapCount: 40
+          }}
+          events={{
+            click: this._handleClick.bind(this)
+          }}
+          position={this.state.shreyainfo}
+          rotation="0 180 0"
+          animation__oscillate={{
+            property: 'position',
+            dur: 2000,
+            dir: 'alternate',
+            easing: 'linear',
+            loop: true,
+            from: this.state.shreyainfo,
+            to: {
+              x: this.state.shreyainfo.x,
+              y: this.state.shreyainfo.y + 0.25,
+              z: this.state.shreyainfo.z
+            }
+          }}
+        />
+      <Entity
+        class="clickable"
+        geometry={{
+          primitive: 'plane',
+          height: 1,
+          width: 3,
+        }}
+        material={{
+          color: '#4b274b',
+          opacity: .80
+        }}
+        text={{
+          font: 'monoid',
+          width: 5,
+          anchor: 'center',
+          baseline: 'center',
+          value: "\"Chrono\" \n Alexis Valladares \n Designer/Developer",
+          align: 'center',
+          color: '#FFCF59',
+          xOffset: 10,
+          zOffset: .1,
+          wrapCount: 40
+        }}
+        events={{
+          click: this._handleClick.bind(this)
+        }}
+        position={this.state.alexisinfo}
+        rotation="0 180 0"
+        animation__oscillate={{
+          property: 'position',
+          dur: 2000,
+          dir: 'alternate',
+          easing: 'linear',
+          loop: true,
+          from: this.state.alexisinfo,
+          to: {
+            x: this.state.alexisinfo.x,
+            y: this.state.alexisinfo.y + 0.25,
+            z: this.state.alexisinfo.z
+          }
+        }}
+      />
+      <Entity
+        class="clickable"
+        geometry={{
+          primitive: 'plane',
+          height: 1,
+          width: 3,
+        }}
+        material={{
+          color: '#4b274b',
+          opacity: .80
+        }}
+        text={{
+          font: 'monoid',
+          width: 5,
+          anchor: 'center',
+          baseline: 'center',
+          value: "^_^ THE TEAM ^_^ ",
+          align: 'center',
+          color: '#FFCF59',
+          xOffset: 10,
+          zOffset: .1,
+          wrapCount: 40
+        }}
+        events={{
+          click: this._handleClick.bind(this)
+        }}
+        position={this.state.teaminfo}
+        rotation="0 180 0"
+        animation__oscillate={{
+          property: 'position',
+          dur: 2000,
+          dir: 'alternate',
+          easing: 'linear',
+          loop: true,
+          from: this.state.teaminfo,
+          to: {
+            x: this.state.teaminfo.x,
+            y: this.state.teaminfo.y + 0.25,
+            z: this.state.teaminfo.z
+          }
+        }}
+      />
+      <Entity
+        class="clickable"
+        geometry={{
+          primitive: 'plane',
+          height: 1,
+          width: 3,
+        }}
+        material={{
+          color: '#4b274b',
+          opacity: .80
+        }}
+        text={{
+          font: 'monoid',
+          width: 5,
+          anchor: 'center',
+          baseline: 'center',
+          value: "\"Skylake\" \n Nathan Wong \n QA/Analytics",
+          align: 'center',
+          color: '#FFCF59',
+          xOffset: 10,
+          zOffset: .1,
+          wrapCount: 40
+        }}
+        events={{
+          click: this._handleClick.bind(this)
+        }}
+        position={this.state.nathaninfo}
+        rotation="0 180 0"
+        animation__oscillate={{
+          property: 'position',
+          dur: 2000,
+          dir: 'alternate',
+          easing: 'linear',
+          loop: true,
+          from: this.state.nathaninfo,
+          to: {
+            x: this.state.nathaninfo.x,
+            y: this.state.nathaninfo.y + 0.25,
+            z: this.state.nathaninfo.z
+          }
+        }}
+      />
+      <Entity
+        class="clickable"
+        geometry={{
+          primitive: 'plane',
+          height: 1,
+          width: 3,
+        }}
+        material={{
+          color: '#4b274b',
+          opacity: .80
+        }}
+        text={{
+          font: 'monoid',
+          width: 5,
+          anchor: 'center',
+          baseline: 'center',
+          value: "\"Tim-Tan\" \n Sukanya Surya \n Artist",
+          align: 'center',
+          color: '#FFCF59',
+          xOffset: 10,
+          zOffset: .1,
+          wrapCount: 40
+        }}
+        events={{
+          click: this._handleClick.bind(this)
+        }}
+        position={this.state.sukanyainfo}
+        rotation="0 180 0"
+        animation__oscillate={{
+          property: 'position',
+          dur: 2000,
+          dir: 'alternate',
+          easing: 'linear',
+          loop: true,
+          from: this.state.sukanyainfo,
+          to: {
+            x: this.state.sukanyainfo.x,
+            y: this.state.sukanyainfo.y + 0.25,
+            z: this.state.sukanyainfo.z
+          }
+        }}
+      />
+      <Entity
+        class="clickable"
+        geometry={{
+          primitive: 'plane',
+          height: 1,
+          width: 3,
+        }}
+        material={{
+          color: '#4b274b',
+          opacity: .80
+        }}
+        text={{
+          font: 'monoid',
+          width: 5,
+          anchor: 'center',
+          baseline: 'center',
+          value: "\"Preacher\" \n Sudeep Raj \n Founder/Lead Designer",
+          align: 'center',
+          color: '#FFCF59',
+          xOffset: 10,
+          zOffset: .1,
+          wrapCount: 40
+        }}
+        events={{
+          click: this._handleClick.bind(this)
+        }}
+        position={this.state.sudeepinfo}
+        rotation="0 180 0"
+        animation__oscillate={{
+          property: 'position',
+          dur: 2000,
+          dir: 'alternate',
+          easing: 'linear',
+          loop: true,
+          from: this.state.sudeepinfo,
+          to: {
+            x: this.state.sudeepinfo.x,
+            y: this.state.sudeepinfo.y + 0.25,
+            z: this.state.sudeepinfo.z
+          }
+        }}
+      />
       </Scene>
     )
   }
