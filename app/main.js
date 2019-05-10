@@ -239,9 +239,7 @@ class Main extends Component {
           width="13"
           height="13"
           position="0 7 -20"
-        />
-        <Entity
-          primitive="a-link"
+          navigate-on-click="url: http://psychetilla.com"
         />
         <Entity
             text-geometry={{
@@ -261,7 +259,12 @@ class Main extends Component {
             }}
             position={{ x: -9.5, y: 13, z: -20 }}
         />
-        <Entity primitive="a-camera" look-controls>
+      <Entity
+        primitive="a-camera"
+        look-controls
+        cursor={{rayOrigin: 'mouse'}}
+        wasd-controls={{acceleration: 150}}
+        >
           <Entity
             primitive="a-cursor"
             acceleration="800"
