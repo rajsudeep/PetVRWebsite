@@ -55,7 +55,6 @@ class Main extends Component {
         <a-assets>
           <video id="videogame" autoplay loop="true" src="img/petsampleclip.mp4"></video>
           <img id="bbtree" src="img/bbTreeanimslowedVR6x.gif"></img>
-          <img id="banana" src="img/banana.gif"></img>
           <img id="team" src="img/bbUxerTeamForVRSite.png"></img>
         </a-assets>
         <Entity
@@ -251,7 +250,7 @@ class Main extends Component {
         />
         <Entity
             text-geometry={{
-              value: 'TECHNICAL DIFFUCKICULTIES',
+              value: 'PSYCH-E-TILLA',
               weight: 'normal',
               bevelEnabled: false,
               bevelSize: 0,
@@ -265,7 +264,8 @@ class Main extends Component {
               roughness: 0.050,
               width: 512,
             }}
-            position={{ x: -9.5, y: 13, z: -20 }}
+            position={{ x: -4.8, y: 13.2, z: -20 }}
+            rotation={{ x: 20, y: 0, z: 0 }}
         />
       <Entity
         primitive="a-camera"
@@ -312,7 +312,7 @@ class Main extends Component {
             align: 'center',
             color: '#FFCF59',
             xOffset: 10,
-            zOffset: .1
+            zOffset: .10
           }}
           events={{
             click: this._handleClick.bind(this)
