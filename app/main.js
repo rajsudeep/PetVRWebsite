@@ -50,7 +50,6 @@ class Main extends Component {
             grid: 'xlines',
             dressingVariance: { x: 15, y: 15, z: 15}
         }}
-        loading-screen="dotsColor: red; backgroundColor: black"
         >
         <a-assets>
           <video id="videogame" autoplay loop="true" src="img/petsampleclip.mp4"></video>
@@ -64,6 +63,19 @@ class Main extends Component {
           event-set__enter="_event: mouseenter; color: #000"
           event-set__leave="_event: mouseleave; color: #4b274b"
           navigate-on-click="url: http://psychetilla.surge.sh"
+        />
+        <Entity
+          geometry={{
+            primitive: 'plane',
+            width: 2,
+            height: 2
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
+          position="0 3 -4"
         />
         <Entity
           primitive="a-image"
