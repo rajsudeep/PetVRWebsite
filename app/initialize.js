@@ -6,7 +6,6 @@
  */
 
 import 'aframe'
-import 'aframe-animation-component'
 import 'aframe-event-set-component'
 import 'aframe-text-geometry-component'
 import 'aframe-gif-shader'

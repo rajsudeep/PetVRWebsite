@@ -11,25 +11,28 @@
     "deploy": "ghpages -d public"
   },
   "dependencies": {
-    "aframe": "^0.6.0",
+    "aframe": "^0.9.2",
     "aframe-animation-component": "^3.2.5",
     "aframe-bmfont-text-component": "^0.1.4",
     "aframe-event-set-component": "^3.0.3",
     "aframe-particle-system-component": "^1.0.10",
-    "aframe-react": "^4.3.0",
-    "preact": "^8.1.0"
+    "aframe-react": "^4.4.0",
+    "preact": "^8.4.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "aframe-gif-component": "^0.2.0",
     "aframe-gif-shader": "^0.9.1",
     "aframe-video-shader": "^0.1.8",
     "auto-reload-brunch": "^2",
-    "babel-brunch": "~6.0",
+    "babel-brunch": "^6.1.1",
     "babel-plugin-transform-react-jsx": "^6.24.1",
     "babel-preset-latest": "^6",
-    "brunch": "^2",
+    "brunch": "^2.10.17",
     "clean-css-brunch": "^2",
     "ghpages": "0.0.3",
+    "install-peers": "^1.0.3",
     "uglify-js-brunch": "^2"
   }
 }

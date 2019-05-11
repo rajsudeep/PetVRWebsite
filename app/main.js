@@ -1,8 +1,6 @@
 import { h, Component } from 'preact'
 import { Entity, Scene } from 'aframe-react'
 
-const COLORS = ['#D92B6A', '#9564F2', '#FFCF59']
-
 class Main extends Component {
   constructor() {
     super()
@@ -65,191 +63,332 @@ class Main extends Component {
           navigate-on-click="url: http://psychetilla.surge.sh"
         />
         <Entity
+          primitive="a-image"
           geometry={{
             primitive: 'plane',
-            width: 2,
-            height: 2
+            width: 8,
+            height: 10
           }}
           material={{
             shader: 'gif',
             src: '#bbtree',
             alphaTest: 0.5
           }}
-          position="0 3 -4"
-        />
-        <Entity
-          primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
           position="0 5 29.412"
           rotation="0 0 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="0 5 -29.412"
           rotation="0 0 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="8 5 28.048"
           rotation="0 20 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-8 5 28.048"
           rotation="0 -20 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="8 5 -28.048"
           rotation="0 -20 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-8 5 -28.048"
           rotation="0 20 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="15.338 5 24.692"
           rotation="0 30 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="15.338 5 -24.692"
           rotation="0 -30 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-15.338 5 24.692"
           rotation="0 -30 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-15.338 5 -24.692"
           rotation="0 30 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="21.545 5 19.494"
           rotation="0 50 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="21.545 5 -19.494"
           rotation="0 -50 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-21.545 5 19.494"
           rotation="0 -50 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-21.545 5 -19.494"
           rotation="0 50 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="25.527 5 12.455"
           rotation="0 70 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="25.527 5 -12.455"
           rotation="0 -70 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-25.527 5 12.455"
           rotation="0 -70 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-25.527 5 -12.455"
           rotation="0 70 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="27.216 5 4.090"
           rotation="0 85 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-27.216 5 4.090"
           rotation="0 -85 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="27.261 5 -4.361"
           rotation="0 95 0"
         />
         <Entity
           primitive="a-image"
-          src="#bbtree"
-          height="10"
-          width="8"
+          geometry={{
+            primitive: 'plane',
+            width: 8,
+            height: 10
+          }}
+          material={{
+            shader: 'gif',
+            src: '#bbtree',
+            alphaTest: 0.5
+          }}
           position="-27.261 5 -4.361"
           rotation="0 -95 0"
         />
@@ -260,6 +399,29 @@ class Main extends Component {
           height="13"
           position="0 7 -20"
         />
+        <Entity
+          primitive="a-camera"
+          wasd-controls={{acceleration: 300}}
+          >
+            <Entity
+              primitive="a-cursor"
+              acceleration="800"
+              cursor={{ fuse: false }}
+              material={{ color: 'white', shader: 'flat', opacity: 0.75 }}
+              geometry={{ radiusInner: 0.005, radiusOuter: 0.007 }}
+              event-set__1={{
+                _event: 'mouseenter',
+                scale: { x: 1.4, y: 1.4, z: 1.4 }
+              }}
+              event-set__2={{
+                _event: 'mouseleave',
+                scale: { x: 1, y: 1, z: 1 }
+              }}
+              raycaster={{
+                objects: '.clickable'
+              }}
+            />
+          </Entity>
         <Entity
             text-geometry={{
               value: 'PSYCH-E-TILLA',
@@ -279,31 +441,6 @@ class Main extends Component {
             position={{ x: -4.8, y: 13.2, z: -20 }}
             rotation={{ x: 20, y: 0, z: 0 }}
         />
-      <Entity
-        primitive="a-camera"
-        look-controls
-        cursor={{rayOrigin: 'mouse'}}
-        wasd-controls={{acceleration: 150}}
-        >
-          <Entity
-            primitive="a-cursor"
-            acceleration="800"
-            cursor={{ fuse: false }}
-            material={{ color: 'white', shader: 'flat', opacity: 0.75 }}
-            geometry={{ radiusInner: 0.005, radiusOuter: 0.007 }}
-            event-set__1={{
-              _event: 'mouseenter',
-              scale: { x: 1.4, y: 1.4, z: 1.4 }
-            }}
-            event-set__2={{
-              _event: 'mouseleave',
-              scale: { x: 1, y: 1, z: 1 }
-            }}
-            raycaster={{
-              objects: '.clickable'
-            }}
-          />
-        </Entity>
         <Entity
           class="clickable"
           geometry={{
@@ -320,11 +457,10 @@ class Main extends Component {
             width: 8,
             anchor: 'center',
             baseline: 'center',
-            value: "WELCOME TO PSYCH-E-TILLA! \n\n WE MAKE WHOLESOME GAMES ^_^ \n \n WHAT WE'RE CURRENTLY SHOWCASING HERE ARE PROTOTYPE FEATURES OF OUR FIRST GAME IN DEVELOPMENT.",
+            value: "WELCOME TO PSYCH-E-TILLA! \n\n WE MAKE WHOLESOME GAMES ^_^ \n \n WHAT WE'RE CURRENTLY SHOWCASING HERE ARE PROTOTYPE FEATURES OF OUR FIRST GAME IN DEVELOPMENT. STAY TUNED FOR A WHOLE LOT MORE!",
             align: 'center',
             color: '#FFCF59',
-            xOffset: 10,
-            zOffset: .10
+            zOffset: .1
           }}
           events={{
             click: this._handleClick.bind(this)
@@ -364,7 +500,6 @@ class Main extends Component {
             value: "\n \n ABOUT THIS GAME: \n\n MINDLESSLY AVOID OBSTACLES AS YOU HEARTILY GUIDE YOUR EAGER DEMON PET THROUGH LIFE. TRAVELING TOO FAR FROM YOUR PET WILL SCARE THEM. TRAVELING TOO CLOSE AND YOUR PET WILL OVERWHELM YOU. BALANCE IS KEY FOR A STABLE JOURNEY! \n\n\n ",
             align: 'center',
             color: '#FFCF59',
-            xOffset: 10,
             zOffset: .1,
             wrapCount: 40
           }}
@@ -414,7 +549,6 @@ class Main extends Component {
             value: "\"Goemon\" \n Alex Otto \n Sound Engineer/Artist",
             align: 'center',
             color: '#FFCF59',
-            xOffset: 10,
             zOffset: .1,
             wrapCount: 40
           }}
@@ -456,7 +590,6 @@ class Main extends Component {
             value: "\"Meow\" \n Sneha Surya \n Artist",
             align: 'center',
             color: '#FFCF59',
-            xOffset: 10,
             zOffset: .1,
             wrapCount: 40
           }}
@@ -498,7 +631,6 @@ class Main extends Component {
             value: "\"FooFoo\" \n Shreya Raj \n Developer",
             align: 'center',
             color: '#FFCF59',
-            xOffset: 10,
             zOffset: .1,
             wrapCount: 40
           }}
@@ -540,7 +672,6 @@ class Main extends Component {
           value: "\"Chrono\" \n Alexis Valladares \n Designer/Developer",
           align: 'center',
           color: '#FFCF59',
-          xOffset: 10,
           zOffset: .1,
           wrapCount: 40
         }}
@@ -582,7 +713,6 @@ class Main extends Component {
           value: "^_^ THE TEAM ^_^ ",
           align: 'center',
           color: '#FFCF59',
-          xOffset: 10,
           zOffset: .1,
           wrapCount: 40
         }}
@@ -624,7 +754,6 @@ class Main extends Component {
           value: "\"Skylake\" \n Nathan Wong \n QA/Analytics",
           align: 'center',
           color: '#FFCF59',
-          xOffset: 10,
           zOffset: .1,
           wrapCount: 40
         }}
@@ -666,7 +795,6 @@ class Main extends Component {
           value: "\"Tim-Tan\" \n Sukanya Surya \n Artist",
           align: 'center',
           color: '#FFCF59',
-          xOffset: 10,
           zOffset: .1,
           wrapCount: 40
         }}
@@ -708,7 +836,6 @@ class Main extends Component {
           value: "\"Preacher\" \n Sudeep Raj \n Founder/Lead Designer",
           align: 'center',
           color: '#FFCF59',
-          xOffset: 10,
           zOffset: .1,
           wrapCount: 40
         }}
